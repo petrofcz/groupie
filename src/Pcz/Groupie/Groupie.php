@@ -127,7 +127,7 @@ class Groupie
 	 * @param $columnDataFactory callable This method should return callback that will construct the IColumnData object (it contains aggregated value to be displayed). Args: [array $entities]
 	 * @return $this
 	 */
-	public function addGlobalColumn(ColumnDefinition $columnDefinition, $columnDataFactory) {
+	public function addGlobalColumn(ColumnDefinition $columnDefinition, callable $columnDataFactory) {
 		$this->addColumn($columnDefinition);
 		foreach($this->groupDefinitions as $groupDefinition) {
 			$groupDefinition->addColumn($columnDefinition, $columnDataFactory);

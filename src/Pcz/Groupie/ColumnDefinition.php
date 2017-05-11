@@ -41,7 +41,7 @@ class ColumnDefinition
 	 * @param GroupDefinition $groupDefinition
 	 * @param $columnDataFactory callable This method should return callback that will construct the IColumnData object (it contains value to be displayed). Args: [array $entities]
 	 */
-	public function addToGroup(GroupDefinition $groupDefinition, $columnDataFactory) {
+	public function addToGroup(GroupDefinition $groupDefinition, callable $columnDataFactory) {
 		$groupDefinition->addColumn($this, $columnDataFactory);
 	}
 
