@@ -19,6 +19,7 @@
 	"require": {	  
 	},
 	"require-dev": {
-		"nette/tester": "^1.7"
+		"nette/tester": "^1.7",
+		"mockery/mockery": "^0.9.9"
 	}
 }
