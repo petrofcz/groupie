@@ -1,0 +1,24 @@
+{
+	"name": "pcz/groupie",
+	"description": "Flat entity collections grouping and value aggregation.",
+	"minimum-stability": "stable",
+	"license": "proprietary",
+	"keyword": [],
+	"authors": [
+		{
+			"name": "petrofcz",
+			"email": "petrof91@gmail.com"
+		}
+	],
+    "autoload": {
+        "psr-0": {
+            "Pcz\\": "src/Pcz/"
+        },
+        "classmap": ["src/"]
+	},
+	"require": {	  
+	},
+	"require-dev": {
+		"nette/tester": "^1.7"
+	}
+}
