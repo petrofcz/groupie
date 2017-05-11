@@ -30,7 +30,7 @@ class Group
 	 * @param string $uid Unique ID of the group.
 	 * @param IGroupData $groupData
 	 * @param int $levelIndex 0-based group level index
-	 * @param $representativeEntity Representative entity for the group
+	 * @param $representativeEntity mixed Representative entity for the group
 	 */
 	public function __construct($uid, IGroupData $groupData, $levelIndex, $representativeEntity)
 	{
