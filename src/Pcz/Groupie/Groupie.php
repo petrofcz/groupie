@@ -9,12 +9,12 @@ class Groupie
 	/**
 	 * @var GroupDefinition[]
 	 */
-	protected $groupDefinitions;
+	protected $groupDefinitions = [];
 
 	/**
 	 * @var ColumnDefinition[]
 	 */
-	protected $columnDefinitions;
+	protected $columnDefinitions = [];
 
 	/**
 	 * This method builds the whole structure.
@@ -23,6 +23,10 @@ class Groupie
 	 * @return Group[]
 	 */
 	public function buildGroups($entities, $level = 0) {
+		if(!count($this->groupDefinitions)) {
+			throw new \RuntimeException('There are no groups defined.');
+		}
+
 		// Building groups
 		/** @var Group[] $groups */
 		$groups = [];
